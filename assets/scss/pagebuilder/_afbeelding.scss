@@ -1,0 +1,11 @@
+.pb-afbeelding {
+	overflow: hidden;
+	position: relative;
+	padding: 100px 0;
+	h2 {
+		transform: rotate(-10deg);
+	}
+	.fill-space {
+		opacity: .8;
+	}
+}

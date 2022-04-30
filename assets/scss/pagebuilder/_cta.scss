@@ -1,0 +1,25 @@
+.pb-cta {
+	position: relative;
+	overflow: hidden;
+	.fill-space {
+		z-index: 0;
+		opacity: 0.8;
+	}
+	.container {
+		z-index: 1;
+		position: relative;
+	}
+	.quotes {
+		.quote {
+			margin-bottom: 30px;
+			img {
+				width: 70%;
+				margin-bottom: 15px;
+			}
+			.quote-block {
+				padding-left: 20px;
+				border-left: 2px solid $greendark;
+			}
+		}
+	}
+}

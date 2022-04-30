@@ -1,0 +1,17 @@
+<section id="section{{ sectionno }}" class="pb-video {{ item.achtergrond }} bg-text">
+	{% if item.afbeelding %}
+		<div class="fill-space">
+			<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding).src }})">
+			</div>
+		</div>
+	{% endif %}
+	<div class="container-fluid container-md">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="video-container anime-fadein">
+					{{ item.video }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,85 @@
+.text-white {
+	color: #fff;
+	muted {
+		opacity: 0.4;
+	}
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	a {
+		color: #fff;
+	}
+	a {
+		&:hover {
+			color: $primary;
+		}
+	}
+	&.bg-orange {
+		a:hover:not(.btn) {
+			color: #fff;
+			text-decoration: underline
+		}
+	}
+}
+
+.text-dark {
+	color: $greendark;
+}
+
+.bg-greylight, 
+.bg-white,
+.bg-yellow,
+.bg-pink,
+.bg-blue,
+.bg-green {
+	color: $greendark;
+}
+
+.bg-opacity.bg-white {
+	background: rgba(#fff, .9) !important;
+}
+.bg-opacity.bg-yellow {
+	background: rgba($yellow, .9) !important;
+}
+.bg-opacity.bg-pink {
+	background: rgba($pink, .9) !important;
+}
+.bg-opacity.bg-blue {
+	background: rgba($blue, .9) !important;
+}
+.bg-opacity.bg-green {
+	background: rgba($green, .9) !important;
+}
+	
+.bg-text {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url(../img/scribble-white.png);
+		background-size: cover;
+		background-position: top center;
+		opacity: .5;
+		z-index: 0;
+	}
+	&.bg-greendark {
+		&:before {
+			opacity: .1;
+		}
+	}
+	.container, .row {
+		z-index: 1;
+		position: relative;
+	}
+}
+
+.text-tilt {
+	transform: rotate(10deg)	
+}
+
+@include media-breakpoint-up(lg) {
+
+}

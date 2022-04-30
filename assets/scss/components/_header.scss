@@ -1,0 +1,136 @@
+body {
+	// padding-top: 80px;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	transition: 1s $ease;
+	height: 100px;
+	padding: 15px 0;
+	.header-brand {
+		img {
+			display: block;
+			height: 60px;
+			width: auto;
+		}
+		.dark {
+			display: none;
+		}
+	}
+	&.nav-up, &.nav-down {
+		.header-brand {
+			.dark {
+				display: block;
+			}
+			.white {
+				display: none;
+			}
+		}
+	}
+	.nav-item.btn {
+		margin-left: 20px;
+		padding: 0;
+		.nav-link {
+			color: $greendark;
+			height: 42px;
+			line-height: 42px;
+			padding: 0 20px;
+		}
+	}
+	ul {
+		list-style-type: none;
+		li {
+			display: inline-block;
+			margin-left: 0;
+			a:not(.btn) {
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	header {
+		position: absolute !important;
+	}
+}
+
+
+@include media-breakpoint-up(lg) {
+	header {
+		position: fixed;
+		height: 150px;
+		.header-brand {
+			img {
+				height: 110px;
+			}
+		}
+		&.nav-up {
+			transform: translateY(-100%);
+			transition-delay: color .6s;
+			.header-brand {
+				transition-delay: background .6s;
+			}
+		}
+		&.nav-down {
+			transform: translateY(0);
+			transition-delay: background .6s;
+		}
+		&.nav-up, &.nav-down {
+			background: $white;
+			height: 60px;
+			.header-brand {
+				display: block;
+				img {
+					height: 40px;
+				}
+			}
+			ul {
+				li {
+					a:not(.btn) {
+						color: $greendark;
+						&:hover, &:focus {
+			
+						}
+					}
+					&.current-menu-item,
+					&.current-menu-item:hover {
+						a:not(.btn) {
+							position: relative;
+							color: $greendark;
+						}
+					}
+				}
+			}
+		}
+		&.nav-down {
+			box-shadow: $box-shadow;
+		}
+		ul {
+			list-style-type: none;
+			li {
+				display: inline-block;
+				margin-left: 5px;
+				a:not(.btn) {
+					color: #fff;
+					&:hover, &:focus {
+
+					}
+				}
+				&.current-menu-item,
+				&.current-menu-item:hover {
+					a:not(.btn) {
+						position: relative;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

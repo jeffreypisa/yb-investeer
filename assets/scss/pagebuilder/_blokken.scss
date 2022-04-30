@@ -1,0 +1,83 @@
+.pb-blokken {
+	padding: 0;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+	img.size-full {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin: 0 0 10px 0;
+	}
+	.col-md.bg-cover {
+		padding-top: 75%;
+	}
+	.kolom-space {
+		padding: 60px 30px;
+		margin: 0 auto;
+	}
+	.ruimte-om-afbeelding {
+		.fill-space {
+			top: 30px;
+			left: 30px;
+			right: 30px;
+			bottom: 30px;
+		}
+	}
+	.col-md:not(.bg-cover) {
+		+ .col-md {
+			.kolom-space {
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.pb-blokken {
+		.col-md.bg-cover {
+			order: -1 !important;
+		}
+	}
+}
+	
+
+@include media-breakpoint-up(md) {
+	.pb-blokken {
+		.col-md.bg-cover {
+			padding-top: 50%;
+		}
+		.kolom-space {
+			padding: 80px 40px;
+			max-width: 500px;
+		}
+		.col-md:not(.bg-cover) {
+			+ .col-md {
+				.kolom-space {
+					padding: 80px 40px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.pb-blokken {
+		.col-md.bg-cover {
+			padding: 0;
+			min-height: 600px;
+		}
+		.kolom-space {
+			padding: 80px 40px;
+			max-width: 500px;
+		}
+		.col-md:not(.bg-cover) {
+			+ .col-md {
+				.kolom-space {
+					padding: 80px 40px;
+				}
+			}
+		}
+	}
+}
