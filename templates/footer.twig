@@ -5,8 +5,8 @@
         <img src="{{ Image(options.logo).src }}" alt="{{ Image(options.logo).alt }}">
       </div>
       {% if options.email %}
-        <div class="col-auto">
-          <a href="mailto:{{ options.email }}" class="btn btn-outline">Contact</a> 
+        <div class="col-auto d-flex align-items-center">
+          <a href="mailto:{{ options.email }}" class="btn btn-sm btn-outline">Contact</a> 
         </div>
       {% endif %}
     </div>

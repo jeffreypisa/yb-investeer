@@ -1,6 +1,7 @@
 .pb-blokken {
 	padding: 0;
 	overflow: hidden;
+	position: relative;
 	img {
 		max-width: 100%;
 	}
@@ -32,8 +33,13 @@
 			}
 		}
 	}
+	> .row {
+		z-index: 1;
+		position: relative;
+	}
 }
 
+/*
 @include media-breakpoint-down(md) {
 	.pb-blokken {
 		.col-md.bg-cover {
@@ -41,7 +47,7 @@
 		}
 	}
 }
-	
+*/
 
 @include media-breakpoint-up(md) {
 	.pb-blokken {

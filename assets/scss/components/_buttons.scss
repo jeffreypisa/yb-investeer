@@ -40,6 +40,18 @@
 	&.btn-outline {
 		border-color: $greendark;
 		border-width: 2px;
+		&:hover, &:focus, &:target {
+			background: $pink;
+			border-color: $pink;
+		}
+	}
+}
+
+section.bg-pink {
+	.btn.btn-outline {
+		&:hover, &:focus, &:target {
+			border-color: $greendark;
+		}
 	}
 }
 

@@ -252,6 +252,25 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_627028994c3b1",
+                            "label": "Scribble",
+                            "name": "scribble",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_6262b967b4cf4",
                             "label": "Kolom",
                             "name": "kolom",
@@ -1131,5 +1150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651515281
+    "modified": 1651517855
 }

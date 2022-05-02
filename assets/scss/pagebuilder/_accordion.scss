@@ -8,7 +8,9 @@
 			}
 		}
 	}
-
+	.nav-link.active {
+		pointer-events: none;
+	}
 	.item {
 		margin: 0 0 10px;
 
@@ -26,11 +28,12 @@
 
 			&:hover {
 				box-shadow: none;
-				color: $primary;
+				background: $primary;
 				cursor: pointer;
 			}
 
 			&[aria-expanded="true"] {
+				pointer-events: none;
 				i.fa-minus {
 					display: block;
 					margin-top: 7px;

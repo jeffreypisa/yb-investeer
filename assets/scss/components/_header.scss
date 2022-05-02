@@ -38,7 +38,7 @@ header {
 			color: $greendark !important;
 			height: 42px;
 			line-height: 42px;
-			padding: 0 20px;
+			padding: 2px 20px;
 		}
 	}
 	ul {
@@ -50,6 +50,10 @@ header {
 				text-decoration: none;
 				font-size: 18px;
 				font-weight: 600;
+				padding: 0.5rem 20px;
+				&:hover {
+					color: $pink;
+				}
 			}
 		}
 	}
@@ -96,7 +100,7 @@ header {
 					a:not(.btn) {
 						color: $greendark;
 						&:hover, &:focus {
-			
+							color: $pink;
 						}
 					}
 					&.current-menu-item,
@@ -120,7 +124,7 @@ header {
 				a:not(.btn) {
 					color: #fff;
 					&:hover, &:focus {
-
+						color: $pink;
 					}
 				}
 				&.current-menu-item,
@@ -128,6 +132,9 @@ header {
 					a:not(.btn) {
 						position: relative;
 						color: #fff;
+						&:hover, &:focus {
+							color: $pink;
+						}
 					}
 				}
 			}
