@@ -4,8 +4,8 @@
 
 @font-face {
 	font-family: 'Korolev';
-	src: url('../fonts/korolev-medium.woff2') format('woff2'),
-		url('../fonts/korolev-medium.woff') format('woff');
+	src: url('../fonts/korolev-rounded-medium.woff2') format('woff2'),
+		url('../fonts/korolev-rounded-medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -13,9 +13,9 @@
 
 @font-face {
 	font-family: 'Korolev';
-	src: url('../fonts/korolev-heavy.woff2') format('woff2'),
-		url('../fonts/korolev-heavy.woff') format('woff');
-	font-weight: 800;
+	src: url('../fonts/korolev-rounded-bold.woff2') format('woff2'),
+		url('../fonts/korolev-rounded-bold.woff') format('woff');
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
@@ -106,10 +106,14 @@ body {
 
 h1.altfont {
 	font-size: 120px;
+	font-weight: 400;
+	line-height: .9;
 }
 
 h2.altfont {
 	font-size: 70px;
+	font-weight: 400;
+	line-height: .9;
 }
 
 @include media-breakpoint-down(lg) {
@@ -119,7 +123,7 @@ h2.altfont {
 		}
 		
 		h2.altfont {
-			font-size: 50px;
+			font-size: 60px;
 		}
 		
 		h1 {
@@ -151,7 +155,7 @@ h2.altfont {
 		}
 		
 		h2.altfont {
-			font-size: 36px;
+			font-size: 46px;
 		}
 		
 		h1 {
@@ -195,7 +199,7 @@ $line-height-sm:              1.25;
 $line-height-lg:              2;
 
 $h1-font-size:                100px;
-$h2-font-size:                36px;
+$h2-font-size:                46px;
 $h3-font-size:                30px;
 $h4-font-size:                24px;
 $h5-font-size:                21px;

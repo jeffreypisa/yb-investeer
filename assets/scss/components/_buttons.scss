@@ -1,4 +1,18 @@
+.nav-pills .nav-link {
+	background: #fff;
+	&:hover:not(.active) {
+		background: $primary;
+		color: $greendark;
+	}
+	margin: 0 10px 20px;
+}
+
 .btn {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	min-width: 140px;
+	border-radius: 6px;
 	&.btn-light {
 		background: #fff;
 		color: $dark;
@@ -19,6 +33,13 @@
 		&:hover, &:focus, &:target {
 			color: $dark !important;
 		}
+	}
+	&:hover, &:focus, &:target {
+		box-shadow: $box-shadow;
+	}
+	&.btn-outline {
+		border-color: $greendark;
+		border-width: 2px;
 	}
 }
 
@@ -49,5 +70,12 @@
 			margin-left: 12px;
 			color: $primary;
 		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.btn {
+		font-size: 22px;
+		min-width: 180px;
 	}
 }

@@ -63,6 +63,7 @@
 	.h1 {
 		color: $pink;
 		transform: rotate(-10deg);
+		text-transform: uppercase;
 	}
 	
 	.vimeo-wrapper {
@@ -125,7 +126,6 @@
 			left: 50%;
 			right: 0;
 			bottom: 0;
-			z-index: 2;
 			opacity: 1;
 			.bg-contain {
 				background-position: center bottom;

@@ -840,9 +840,9 @@
                             "return_format": "array"
                         },
                         {
-                            "key": "field_6262d7fa97650",
-                            "label": "Regels",
-                            "name": "cards",
+                            "key": "field_6270180d05e31",
+                            "label": "Categorie",
+                            "name": "categorie",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -852,14 +852,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "field_6262d81397651",
+                            "collapsed": "field_6270182405e32",
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
-                            "button_label": "",
+                            "layout": "row",
+                            "button_label": "Nieuwe categorie",
                             "sub_fields": [
                                 {
-                                    "key": "field_6262d81397651",
+                                    "key": "field_6270182405e32",
                                     "label": "Titel",
                                     "name": "titel",
                                     "type": "text",
@@ -878,10 +878,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_6262d81797652",
-                                    "label": "Tekst",
-                                    "name": "tekst",
-                                    "type": "wysiwyg",
+                                    "key": "field_6262d7fa97650",
+                                    "label": "Regels",
+                                    "name": "cards",
+                                    "type": "repeater",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -890,11 +890,51 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
+                                    "collapsed": "field_6262d81397651",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_6262d81397651",
+                                            "label": "Titel",
+                                            "name": "titel",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_6262d81797652",
+                                            "label": "Tekst",
+                                            "name": "tekst",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "delay": 0
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -1091,5 +1131,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651337013
+    "modified": 1651515281
 }

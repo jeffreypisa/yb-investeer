@@ -83,24 +83,21 @@ body {
 		width: auto;
 		padding: 0;
 		height: 50px;
-		line-height: 50px;
+		line-height: 48px;
 		display: inline-block;
-		margin: 0 auto 30px;
+		margin: 30px auto 30px;
 		&:hover, &:focus {
 			.nav-link {
-				color: #fff;
+				color: $greendark;
 			}
 		}
 		.nav-link {
-			color: #fff;
-			padding: 0 30px;
-			height: 50px;
-			line-height: 50px;
+			color: $greendark;
 			font-size: 21px;
 			margin: 0;
 			display: inline-block;
 			&:hover, &:focus {
-				color: #fff;
+				color: $greendark;
 			}
 		}
 	}

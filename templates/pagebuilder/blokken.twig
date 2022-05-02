@@ -7,13 +7,11 @@
 	{% endif %}
 	{% if item.kolom %}
 		<div class="row g-0">
-		
 			{% for kolom in item.kolom %}
-				
 				{% if kolom.acf_fc_layout == 'content' %}
 					<div class="col-md">
 						<div class="kolom h-100 d-flex align-items-center {{ kolom.achtergrond }} {% if item.afbeelding %}bg-opacity{% endif %} {% if kolom.achtergrond == 'bg-dark' %}text-white{% endif %} {% if kolom.tekst_centreren %}text-center{% endif %}">
-							<div class="kolom-space last-element-no-mb flex-fill content-styling">
+							<div class="{% if kolom.tekst or item.titel %}kolom-space{% endif %} last-element-no-mb flex-fill content-styling">
 								{% if kolom.titel %}
 									<h2 class="{{ kolom.titel_font }}"> {{ kolom.titel }} </h2>
 								{% endif %}
@@ -31,7 +29,7 @@
 								{% endif %}
 								{% if kolom.link %}
 									<br>
-									<a class="btn btn-primary" href="{{ kolom.link.url }}" target="{{ kolom.link.target }}">{{ kolom.link.title }}</a>
+									<a class="btn {% if item.achtergrond == 'bg-pink' %}btn-outline btn-primary{% else %}btn-primary{% endif %}" href="{{ kolom.link.url }}" target="{{ kolom.link.target }}">{{ kolom.link.title }}</a>
 								{% endif %}
 							</div>
 						</div>
