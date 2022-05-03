@@ -116,10 +116,10 @@ h2.altfont {
 	line-height: .9;
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
 	body {
 		h1.altfont {
-			font-size: 80px;
+			font-size: 96px;
 		}
 		
 		h2.altfont {
@@ -144,6 +144,38 @@ h2.altfont {
 		.lead {
 			font-size: 20px;
 			line-height: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	body {
+		h1.altfont {
+			font-size: 80px;
+		}
+		
+		h2.altfont {
+			font-size: 50px;
+		}
+		
+		h1 {
+			font-size: 42px;
+		}
+		h2 {
+			font-size: 32px;
+		}
+		h3 {
+			font-size: 24px;
+		}
+		h4 {
+			font-size: 22px;
+		}
+		h5, h6 {
+			font-size: 17px;
+		}
+		.lead {
+			font-size: 19px;
+			line-height: 28px;
 		}
 	}
 }

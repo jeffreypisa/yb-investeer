@@ -139,9 +139,9 @@
 	}
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
 	.pb-banner {
-		min-height: 800px;
-		padding: 160px 0 60px;
+		min-height: 780px;
+		padding: 140px 0 60px;
 	}
 }

@@ -35,7 +35,7 @@
 		}
 	}
 	&:hover, &:focus, &:target {
-		box-shadow: $box-shadow;
+		box-shadow: 0px 6px 14px 0px rgba($greendark,.2);
 	}
 	&.btn-outline {
 		border-color: $greendark;
