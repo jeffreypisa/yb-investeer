@@ -104,8 +104,14 @@ body {
 	margin-top: 60px;
 }
 
-h1.altfont {
-	font-size: 120px;
+.h1xl.altfont {
+	font-size: 114px;
+	font-weight: 400;
+	line-height: .9;
+}
+
+.h1.altfont {
+	font-size: 90px;
 	font-weight: 400;
 	line-height: .9;
 }
@@ -118,8 +124,11 @@ h2.altfont {
 
 @include media-breakpoint-down(xl) {
 	body {
-		h1.altfont {
+		.h1xl.altfont {
 			font-size: 96px;
+		}
+		.h1.altfont {
+			font-size: 80px;
 		}
 		
 		h2.altfont {
@@ -150,8 +159,11 @@ h2.altfont {
 
 @include media-breakpoint-down(lg) {
 	body {
-		h1.altfont {
+		.h1xl.altfont {
 			font-size: 80px;
+		}
+		.h1.altfont {
+			font-size: 65px;
 		}
 		
 		h2.altfont {
@@ -182,8 +194,11 @@ h2.altfont {
 
 @include media-breakpoint-down(sm) {
 	body {
-		h1.altfont {
+		.h1xl.altfont {
 			font-size: 60px;
+		}
+		.h1.altfont {
+			font-size: 50px;
 		}
 		
 		h2.altfont {

@@ -117,6 +117,33 @@
             "maxlength": ""
         },
         {
+            "key": "field_62723c77e449f",
+            "label": "Titel xl",
+            "name": "banner_titel_xl",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6263f8edf2bad",
+                        "operator": "!=",
+                        "value": "verbergen"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_6262ab9fe3c8a",
             "label": "Tekst",
             "name": "banner_tekst",
@@ -187,5 +214,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651318744
+    "modified": 1651653771
 }

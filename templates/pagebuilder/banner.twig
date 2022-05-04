@@ -6,8 +6,8 @@
 		</div>
 		<div class="container-fluid container-xl anime-fadein" style="z-index: 2">
 			<div class="row">
-				<div class="col-9 col-md-8 text-center">
-					<h2 class="h1 mb-3 altfont">
+				<div class="col-10 col-md-8 text-center">
+					<h2 class="h1{% if post.banner_titel_xl %}xl{% endif %} mb-3 altfont">
 						{% if post.banner_titel %}
 							{{ post.banner_titel }} 
 						{% else %}

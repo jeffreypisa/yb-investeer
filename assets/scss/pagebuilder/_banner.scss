@@ -60,7 +60,7 @@
 		z-index: -4;
 	}
 	
-	.h1 {
+	.h1, .h1xl {
 		color: $pink;
 		transform: rotate(-10deg);
 		text-transform: uppercase;
@@ -94,7 +94,7 @@
 
 	.fill-space {
 		position: absolute;
-		top: 0;
+		top: 80px;
 		left: 50%;
 		right: -50%;
 		bottom: 0;
@@ -118,11 +118,12 @@
 
 @include media-breakpoint-up(md) {
 	.pb-banner {
-		min-height: 650px;
-		padding: 100px 0 60px;
+		height: 60vh;
+		min-height: 600px;
+		padding: 120px 0 60px;
 		.fill-space {
 			position: absolute;
-			top: 0;
+			top: 80px;
 			left: 50%;
 			right: 0;
 			bottom: 0;
@@ -132,6 +133,16 @@
 			}
 		}
 		
+		&.toon-xl {
+			height: 60vh;
+			height: calc(var(--vh, 1vh) * 60);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.pb-banner {
+		min-height: 720px;
 		&.toon-xl {
 			height: 70vh;
 			height: calc(var(--vh, 1vh) * 70);
