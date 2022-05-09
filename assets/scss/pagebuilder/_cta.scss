@@ -4,7 +4,7 @@
 
 	.fill-space {
 		z-index: 0;
-		opacity: 0.8;
+		opacity: 1;
 	}
 
 	.container {
@@ -15,10 +15,18 @@
 	.quotes {
 		.quote {
 			margin-bottom: 30px;
-
-			img {
-				width: 70%;
+			color: $greendark;
+			text-decoration: none;
+			&[href] {
+				pointer-events: none;
+			}
+			.quote-image {
+				width: 60%;
 				margin-bottom: 15px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				padding-top: 30%;
+				background-position: left bottom;
 			}
 
 			.quote-block {

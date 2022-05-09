@@ -10,16 +10,17 @@
 					<p> {{ item.tekst }} </p>
 					{% endif %}
 				</div>
-
-				<ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
-					{% set categorie_index = '0' %}
-					{% for item in item.categorie %}
-					{% set categorie_index = categorie_index + 1 %}
-					<li class="nav-item" role="presentation">
-						<button class="nav-link {% if loop.first %}active{% endif %}" id="pills-tab" data-bs-toggle="pill" data-bs-target="#tab-{{ categorie_index }}" type="button" role="tab" aria-controls="pills" {% if loop.first %}aria-selected="true" {% endif %}>{{ item.titel }}</button>
-					</li>
-					{% endfor %}
-				</ul>
+				{% if item.categorie|length > 1 %}
+					<ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+						{% set categorie_index = '0' %}
+						{% for item in item.categorie %}
+						{% set categorie_index = categorie_index + 1 %}
+						<li class="nav-item" role="presentation">
+							<button class="nav-link {% if loop.first %}active{% endif %}" id="pills-tab" data-bs-toggle="pill" data-bs-target="#tab-{{ categorie_index }}" type="button" role="tab" aria-controls="pills" {% if loop.first %}aria-selected="true" {% endif %}>{{ item.titel }}</button>
+						</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 
 
 				<div class="tab-content" id="pills-tabContent">
@@ -43,7 +44,7 @@
 										</div>
 									</div>
 								</a>
-								<div id="collapse_{{ sectionno }}_{{ categorie_index }}_{{ cardno }}" class="collapse" aria-labelledby="heading_{{ sectionno }}_{{ categorie_index }}_{{ cardno }}" data-bs-parent="#accordion_{{ sectionno }}_{{ categorie_index }}">
+								<div id="collapse_{{ sectionno }}_{{ categorie_index }}_{{ cardno }}" class="collapse bg-white" aria-labelledby="heading_{{ sectionno }}_{{ categorie_index }}_{{ cardno }}" data-bs-parent="#accordion_{{ sectionno }}_{{ categorie_index }}">
 									<div class="antwoord body3">
 										{{ card.tekst }}
 									</div>

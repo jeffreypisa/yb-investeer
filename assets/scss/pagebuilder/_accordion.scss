@@ -46,6 +46,12 @@
 
 		.antwoord {
 			padding: 10px 15px;
+			a {
+				&:hover {
+					color: $pink;
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 }
