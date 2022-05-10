@@ -2,6 +2,12 @@
 	display: none;
 }
 
+.nf-form-content button:hover, 
+.nf-form-content input[type=button]:hover, 
+.nf-form-content input[type=submit]:hover {
+	background: lighten($pink, 3%) !important;
+}
+
 body {
 	button, 
 	input[type=button], 

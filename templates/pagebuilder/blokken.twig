@@ -1,4 +1,4 @@
-<section id="section{{ sectionno }}" class="pb-blokken {{ item.achtergrond }} {% if item.scribble %}bg-text{% endif %}">
+<section id="{% if item.id %}{{ item.id }}{% else %}blokken_{{ sectionno }}{% endif %}" class="pb-blokken {{ item.achtergrond }} {% if item.scribble %}bg-text{% endif %}">
 	{% if item.afbeelding %}
 		<div class="fill-space {% if item.parallax %}js-parallax{% endif %}">
 			<div class="bg-cover" style="background-image: url({{ Image(item.afbeelding).src }})">

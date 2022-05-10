@@ -167,6 +167,25 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_627aaac3d5a9c",
+                            "label": "ID",
+                            "name": "id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -535,6 +554,25 @@
                             "button_label": "Nieuwe kolom",
                             "min": "",
                             "max": ""
+                        },
+                        {
+                            "key": "field_627aaacfd5a9d",
+                            "label": "ID",
+                            "name": "id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -1092,7 +1130,7 @@
                         },
                         {
                             "key": "field_627a68c7be0e2",
-                            "label": "Pitchdek",
+                            "label": "Pitchdeck",
                             "name": "form",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -1222,5 +1260,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652191320
+    "modified": 1652206295
 }
