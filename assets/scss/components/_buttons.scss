@@ -45,6 +45,16 @@
 			border-color: $pink;
 		}
 	}
+	&.btn-outline-light {
+		border-color: $pink;
+		border-width: 2px;
+		color: $pink;
+		&:hover, &:focus, &:target {
+			background: $pink;
+			border-color: $pink;
+			color: $greendark;
+		}
+	}
 }
 
 section.bg-pink {
@@ -81,6 +91,15 @@ section.bg-pink {
 		&:after {
 			margin-left: 12px;
 			color: $primary;
+		}
+	}
+}
+
+.bg-greendark {
+	.btn-link {
+		color: $pink;
+		&:after {
+		
 		}
 	}
 }

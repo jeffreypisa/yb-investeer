@@ -34,6 +34,12 @@
 								<div class="quote-image" style="background-image: url({{ Image(quote.afbeelding).src }})"></div>
 								<div class="quote-block">
 									{{ quote.tekst }}
+									{% if quote.naam or quote.functie %}
+										<div class="mt-2">
+											<div class="clearfix"></div>
+											<strong>{{ quote.naam }}</strong> {% if quote.functie %}- <i>{{ quote.functie }}</i>{% endif %}
+										</div>
+									{% endif %}
 								</div>
 							</a>
 						</div>

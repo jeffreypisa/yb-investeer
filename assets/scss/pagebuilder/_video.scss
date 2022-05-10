@@ -3,4 +3,15 @@
 	.video-container {
 		box-shadow: $box-shadow;
 	}
+	a[href]:hover {
+		color: $pink;
+		text-decoration: underline;
+	}
+	.nf-field-container {
+		text-align: center;
+	}
+	.form-control, .nf-form-content .list-select-wrap .nf-field-element>div, .nf-form-content input:not([type=button]), .nf-form-content textarea {
+		height: 60px;
+		border-radius: 6px;
+	}
 }

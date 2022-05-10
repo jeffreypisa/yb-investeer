@@ -716,6 +716,44 @@
                                     "new_lines": ""
                                 },
                                 {
+                                    "key": "field_627a6f690a038",
+                                    "label": "Naam",
+                                    "name": "naam",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_627a704b0a039",
+                                    "label": "Functie",
+                                    "name": "functie",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_6274fdd065ffb",
                                     "label": "Link",
                                     "name": "link",
@@ -1051,6 +1089,25 @@
                             },
                             "width": "",
                             "height": ""
+                        },
+                        {
+                            "key": "field_627a68c7be0e2",
+                            "label": "Pitchdek",
+                            "name": "form",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -1165,5 +1222,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651836840
+    "modified": 1652191320
 }

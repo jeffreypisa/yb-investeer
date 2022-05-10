@@ -15,10 +15,14 @@
 						{% endif %}
 					</h2>
 					{% if post.banner_tekst %}
-						<p class="lead mb-4"> {{ post.banner_tekst }} </p>
+						<p class="lead mb-5"> {{ post.banner_tekst }} </p>
 					{% endif %}
 					{% if post.banner_link %}
-						<a class="btn btn-primary" href="{{ post.banner_link.url }}" target="{{ post.banner_link.target }}">{{ post.banner_link.title }}</a>
+						<a class="btn btn-primary mb-3" href="{{ post.banner_link.url }}" target="{{ post.banner_link.target }}">{{ post.banner_link.title }}</a>
+					{% endif %}
+					{% if post.banner_link_secondary %}
+						<div class="clearfix"></div>
+						<a class="btn-link" href="{{ post.banner_link_secondary.url }}" target="{{ post.banner_link_secondary.target }}">{{ post.banner_link_secondary.title }}</a>
 					{% endif %}
 				</div>
 			</div>
