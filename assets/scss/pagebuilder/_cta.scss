@@ -17,6 +17,7 @@
 			margin-bottom: 30px;
 			color: $greendark;
 			text-decoration: none;
+			display: block;
 			&[href] {
 				pointer-events: none;
 			}
@@ -47,23 +48,27 @@
 		counter-reset: item;
 		padding: 0;
 		position: relative;
-		&:after {
-			left: 23px;
-			top: 10px;
-			bottom: 40px;
-			width: 4px;
-			background: $greendark;
-			z-index: 0;
-			position: absolute;
-			content: '';
-		}
 		li {
 			counter-increment: item;
-			margin-bottom: 20px;
 			line-height: 30px;
-			padding: 10px 0 0 70px;
+			padding: 10px 0 30px 70px;
 			z-index: 1;
 			position: relative;
+			&:after {
+				left: 23px;
+				top: 0px;
+				bottom: 0px;
+				width: 4px;
+				background: $greendark;
+				z-index: 0;
+				position: absolute;
+				content: '';
+			}
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
 		}
 
 		li:before {

@@ -9,7 +9,7 @@
 		<div class="row g-0">
 			{% for kolom in item.kolom %}
 				{% if kolom.acf_fc_layout == 'content' %}
-					<div class="col-md">
+					<div class="col-lg">
 						<div class="kolom h-100 d-flex align-items-center {{ kolom.achtergrond }} {% if item.afbeelding %}bg-opacity{% endif %} {% if kolom.achtergrond == 'bg-dark' %}text-white{% endif %} {% if kolom.tekst_centreren %}text-center{% endif %}">
 							<div class="{% if kolom.tekst or item.titel %}kolom-space{% endif %} last-element-no-mb flex-fill content-styling anime-fadein">
 								{% if kolom.titel %}
