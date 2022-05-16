@@ -24,6 +24,9 @@
 	
 	{% elseif item.acf_fc_layout == 'afbeelding' %}
 		{% include 'pagebuilder/afbeelding.twig' %}
+		
+	{% elseif item.acf_fc_layout == 'indemedia' %}
+		{% include 'pagebuilder/indemedia.twig' %}
 	
 	{% elseif item.acf_fc_layout == 'blokken' %}
 		{% include 'pagebuilder/blokken.twig' %}

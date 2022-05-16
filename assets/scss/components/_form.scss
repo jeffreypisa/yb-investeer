@@ -8,6 +8,17 @@
 	background: lighten($pink, 3%) !important;
 }
 
+.ff_range_value:before {
+	content: '€';
+}
+
+body .fluentform .ff-btn {
+	background: $pink !important;
+	color: $greendark !important;
+	@extend .btn;
+	@extend .btn-primary;
+}
+
 body {
 	button, 
 	input[type=button], 

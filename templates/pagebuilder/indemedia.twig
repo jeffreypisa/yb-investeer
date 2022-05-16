@@ -1,0 +1,38 @@
+<section id="missie" class="pb-indemedia {{ item.achtergrond }} bg-text">
+	<div class="container-fluid container-md">
+		<div class="text-center mb-5">
+			<h2 class="altfont"> In de media </h2>
+		</div>
+		<div class="row">
+			{% for media in item.media %}
+				<div class="col-md-6 col-lg-4">
+					<div class="media mb-5">
+						{% if media.afbeelding %}
+							<div class="media-image" style="background-image: url({{ Image(media.afbeelding).src }})"></div>
+						{% endif %}
+						<div class="media-block">
+							<div data-mh>
+								{% if media.tekst %}
+									<p> {{ media.tekst }} </p>
+								{% endif %}
+							</div>
+							
+							{% if media.link %}
+								<a class="btn-link mt-5" href="{{ media.link.url }}" target="{{ media.link.target }}">
+									{% if media.type_link == 'artikel' %}
+										<i class="fas fa-book-open"></i> 
+									{% elseif media.type_link == 'podcast' %}
+										<i class="fas fa-podcast"></i> 
+									{% elseif media.type_link == 'video' %}
+										<i class="fas fa-play-circle"></i> 
+									{% endif %}
+									{{ media.link.title }}
+								</a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -87,10 +87,10 @@ section.bg-pink {
 	}
 	&:hover {
 		text-decoration: none;
-		color: $primary;
+		color: $dark;
 		&:after {
 			margin-left: 12px;
-			color: $primary;
+			color: $dark;
 		}
 	}
 }

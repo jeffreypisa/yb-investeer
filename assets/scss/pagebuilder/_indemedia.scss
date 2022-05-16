@@ -1,0 +1,38 @@
+.pb-indemedia {
+	position: relative;
+	overflow: hidden;
+
+	.fill-space {
+		z-index: 0;
+		opacity: 1;
+	}
+
+	.container-fluid {
+		z-index: 1;
+		position: relative;
+		.media {
+			.media-image {
+				width: 60%;
+				margin-bottom: 15px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				height: 60px;
+				background-position: left bottom;
+				filter: grayscale(100%);
+			}
+			
+			.media-block {
+				padding-left: 20px;
+				border-left: 2px solid $greendark;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}

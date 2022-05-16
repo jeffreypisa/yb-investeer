@@ -1234,9 +1234,9 @@
                                 },
                                 {
                                     "key": "field_627b86c2f1e92",
-                                    "label": "Titel",
-                                    "name": "titel",
-                                    "type": "text",
+                                    "label": "Logo",
+                                    "name": "afbeelding",
+                                    "type": "image",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1245,11 +1245,16 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
                                 },
                                 {
                                     "key": "field_627b86c5f1e93",
@@ -1400,5 +1405,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652262650
+    "modified": 1652267929
 }
