@@ -215,6 +215,21 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_630cb1a35f038",
+            "label": "Sticker",
+            "name": "sticker",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -237,5 +252,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652171884
+    "modified": 1661776849
 }

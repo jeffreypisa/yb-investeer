@@ -7,7 +7,7 @@
       "uuidString" : "DAB3A1D1-B069-47CF-B5B7-C2F91B29D8B3"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34418",
   "files" : {
     "\/.nova\/Publishing\/Emonks.json" : {
       "ft" : 524288,
@@ -338,36 +338,36 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/fonts\/Korolev-Heavy.woff" : {
+    "\/assets\/fonts\/korolev-heavy.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Korolev-Heavy.woff",
+      "oAP" : "\/assets\/fonts\/korolev-heavy.woff",
       "oF" : 0
     },
-    "\/assets\/fonts\/Korolev-Heavy.woff2" : {
+    "\/assets\/fonts\/korolev-heavy.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Korolev-Heavy.woff2",
+      "oAP" : "\/assets\/fonts\/korolev-heavy.woff2",
       "oF" : 0
     },
-    "\/assets\/fonts\/Korolev-Medium.woff" : {
+    "\/assets\/fonts\/korolev-medium.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Korolev-Medium.woff",
+      "oAP" : "\/assets\/fonts\/korolev-medium.woff",
       "oF" : 0
     },
-    "\/assets\/fonts\/Korolev-Medium.woff2" : {
+    "\/assets\/fonts\/korolev-medium.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Korolev-Medium.woff2",
+      "oAP" : "\/assets\/fonts\/korolev-medium.woff2",
       "oF" : 0
     },
     "\/assets\/fonts\/korolev-rounded-bold.woff" : {
@@ -417,20 +417,20 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/fonts\/Sinzano-Regular.woff" : {
+    "\/assets\/fonts\/sinzano-regular.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Sinzano-Regular.woff",
+      "oAP" : "\/assets\/fonts\/sinzano-regular.woff",
       "oF" : 0
     },
-    "\/assets\/fonts\/Sinzano-Regular.woff2" : {
+    "\/assets\/fonts\/sinzano-regular.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Sinzano-Regular.woff2",
+      "oAP" : "\/assets\/fonts\/sinzano-regular.woff2",
       "oF" : 0
     },
     "\/assets\/fonts\/solid.scss" : {
@@ -460,20 +460,20 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/assets\/fonts\/Takota.woff" : {
+    "\/assets\/fonts\/takota.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Takota.woff",
+      "oAP" : "\/assets\/fonts\/takota.woff",
       "oF" : 0
     },
-    "\/assets\/fonts\/Takota.woff2" : {
+    "\/assets\/fonts\/takota.woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/fonts\/Takota.woff2",
+      "oAP" : "\/assets\/fonts\/takota.woff2",
       "oF" : 0
     },
     "\/assets\/img\/arrow.svg" : {
@@ -2871,7 +2871,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -3499,6 +3500,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,

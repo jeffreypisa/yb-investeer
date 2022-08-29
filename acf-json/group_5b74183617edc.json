@@ -855,6 +855,25 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_630646f62b3bb",
+                            "label": "Aandelen ronde 2",
+                            "name": "aandelen_ronde_2",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -1405,5 +1424,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652267929
+    "modified": 1661355797
 }

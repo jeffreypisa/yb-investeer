@@ -24,6 +24,11 @@
 						<div class="clearfix"></div>
 						<a class="btn-link" href="{{ post.banner_link_secondary.url }}" target="{{ post.banner_link_secondary.target }}">{{ post.banner_link_secondary.title }}</a>
 					{% endif %}
+					{% if post.sticker %}
+						<a class="sticker d-flex align-items-center" href="{{ post.sticker.url }}" target="{{ post.sticker.target }}">
+							<span class="h3 mb-0">{{ post.sticker.title }}</span>
+						</a>
+					{% endif %}
 				</div>
 			</div>
 		</div>

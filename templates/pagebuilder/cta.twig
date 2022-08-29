@@ -7,7 +7,7 @@
 	{% endif %}
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 ">
+			<div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 ">
 				<div class="card bg-white mt-5 mb-5">
 					<div class="card-body">
 						{% if item.titel %}
@@ -18,6 +18,9 @@
 						{% endif %}
 						{% if item.link %}
 							<a class="btn btn-primary" href="{{ item.link.url }}" target="{{ item.link.target }}">{{ item.link.title }}</a>
+						{% endif %}
+						{% if item.sticker %}
+							<a class="sticker" href="{{ item.sticker.url }}" target="{{ item.sticker.target }}">{{ item.sticker.title }}</a>
 						{% endif %}
 					</div>
 				</div>
